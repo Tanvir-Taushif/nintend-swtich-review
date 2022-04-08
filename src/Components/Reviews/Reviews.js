@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
 import './Reviews.css';
 
 const Reviews = () => {
-    const [reviews,setReviews]=useState([]);
-    useEffect(()=>{
-        fetch('reviews.json')
-        .then(res=>res.json())
-        .then(data=>setReviews(data));
-    },[]);
+   const [reviews,setReviews]=useReviews(); //Custom Hook
     return (
         <div>
             <h1 className='review-title fw-bold text-center'>Reviews</h1>
