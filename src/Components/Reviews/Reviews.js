@@ -7,7 +7,7 @@ const Reviews = () => {
    const [reviews,setReviews]=useReviews(); //Custom Hook
     return (
         <div>
-            <h1 className='review-title fw-bold text-center'>Reviews</h1>
+            <h2 className='review-title fw-bold text-center my-5'>Reviews of Our Customers</h2>
             <div className="container overflow-hidden">
                 <div className="row g-5">
                    {

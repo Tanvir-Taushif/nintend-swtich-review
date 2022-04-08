@@ -3,7 +3,7 @@ import './HomeReviews.css';
 import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
 import { Link } from 'react-router-dom';
-import { ArrowNarrowRightIcon } from '@heroicons/react/solid'
+import { ArrowNarrowRightIcon } from '@heroicons/react/solid';
 
 const HomeReviews = () => {
     const [reviews,setReviews]= useReviews();
