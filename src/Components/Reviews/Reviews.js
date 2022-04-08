@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Review from '../Review/Review';
+import './Reviews.css';
 
 const Reviews = () => {
     const [reviews,setReviews]=useState([]);
@@ -10,7 +11,7 @@ const Reviews = () => {
     },[]);
     return (
         <div>
-            <h1 className=' text-center'>Review</h1>
+            <h1 className='review-title fw-bold text-center'>Reviews</h1>
             <div className="container overflow-hidden">
                 <div className="row g-5">
                    {
@@ -19,7 +20,7 @@ const Reviews = () => {
                        )
                    }
                 </div>
-            </div>
+            </div> <br />
         </div>
     );
 };

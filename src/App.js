@@ -8,6 +8,7 @@ import Blogs from './Components/Blogs/Blogs';
 import About from './Components/About/About';
 import Header from './Components/Header/Header';
 import NotFound from './Components/NotFound/NotFound';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={ <About></About> }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
