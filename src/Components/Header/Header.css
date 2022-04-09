@@ -1,11 +1,14 @@
 /* Navbar Styles */
+.header{
+    color:#FF6359 ;
+}
 .links{
     position: relative;
     text-decoration: none;
-    font-weight:700;
+    font-weight:700 !important;
     padding: 10px;
     margin: 20px;
-    color: black;
+    color:black;
     font-size: medium;
 }
 
@@ -23,44 +26,10 @@
 }
 
 .links:hover{
-    color:#242582;  
+    color: #242582 !important;
 }
 
 .links:hover::before{
     right: 0%;
     width: 100%;
-}
-
-#button{
-    color: white;
-    background-color: #242582;
-    display: none;
-}
-
-/* Custom Responsive Navbar */
-@media screen and (max-width:630px) {
-    #NavBar{
-        flex-direction: column;
-        text-align: center;
-        background-color: rgb(235, 234, 234);
-    }
-    #navManu{
-        display:none;
-        flex-direction: column;
-        
-    }
-    .nav-hide{
-        margin: 10px;
-    }
-    #button{
-        display: block;
-    }
-}
-@media screen and (min-width:630px) {
-    #navManu{
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-    } 
 }
